@@ -3,17 +3,17 @@
 
 using namespace std;
 
-bool check(double x, double y)//Ïðîâåðêà
+bool check(double x, double y)//ÐŸÑ€Ð¾Ð²ÐµÑ€ÐºÐ°
 {
 	if (x > 1000 || x < -1000 || y > 1000 || y < -1000)
 	{
-		cout << "ââåäåíî íåïðàâèëüíîå ÷èñëî\n";
+		cout << "Ð²Ð²ÐµÐ´ÐµÐ½Ð¾ Ð½ÐµÐ¿Ñ€Ð°Ð²Ð¸Ð»ÑŒÐ½Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾Ð»\n";
 		return 1;
 	}
 	return 0;
 }
 
-void pluss(Complex Z, Complex X)//Ñóììà äâóõ ÷èñåë
+void pluss(Complex Z, Complex X)//Ð¡ÑƒÐ¼Ð¼Ð° Ð´Ð²ÑƒÑ… Ñ‡Ð¸ÑÐµÐ»
 {
 	Complex rez;
 	rez.re = Z.re + X.re;
@@ -21,7 +21,7 @@ void pluss(Complex Z, Complex X)//Ñóììà äâóõ ÷èñåë
 	cout << rez.re << " + (" << rez.im << ")i\n";
 }
 
-void substruct(Complex Z, Complex X)//Ðàçíîñòü äâóõ ÷èñåë
+void substruct(Complex Z, Complex X)//Ð Ð°Ð·Ð½Ð°ÑÑ‚ÑŒ Ð´Ð²ÑƒÑ… Ñ‡Ð¸ÑÐµÐ»
 {
 	Complex rez;
 	rez.re = Z.re - X.re;
@@ -29,7 +29,7 @@ void substruct(Complex Z, Complex X)//Ðàçíîñòü äâóõ ÷èñåë
 	cout << rez.re << " + (" << rez.im << ")i\n";
 }
 
-void multiplication(Complex Z, Complex X)// Óìíîæåíèå äâóõ ÷èñåë
+void multiplication(Complex Z, Complex X)//Ð£Ð¼Ð½Ð¾Ð¶ÐµÐ½Ð¸Ðµ Ð´Ð²ÑƒÑ… Ñ‡Ð¸ÑÐµÐ»
 {
 	Complex rez;
 	rez.re = Z.re * X.re - Z.im * X.im;
@@ -37,7 +37,7 @@ void multiplication(Complex Z, Complex X)// Óìíîæåíèå äâóõ ÷èñåë
 	cout << rez.re << " + (" << rez.im << ")i\n";
 }
 
-void devide(Complex Z, Complex X)//Äåëåíèå äâóõ ÷èñåë
+void devide(Complex Z, Complex X)//Ð”ÐµÐ»ÐµÐ½Ð¸Ðµ Ð´Ð²ÑƒÑ… Ñ‡Ð¸ÑÐµÐ»
 {
 	Complex rez;
 	rez.re = (Z.re * X.re + Z.im * X.im) / (Z.re * X.re + X.im * X.im);
