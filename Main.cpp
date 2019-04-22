@@ -18,7 +18,7 @@ int main()
 		cin >> y1;
 		bCheck = check(x1, y1);
 	}
-	cout << "Введите ворое комплексное число(re, im):\n";
+	cout << "Введите второе комплексное число(re, im):\n";
 	bCheck = true;
 
 	while (bCheck)
