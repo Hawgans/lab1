@@ -9,8 +9,8 @@ int main()
 	system("chcp 1251");
 	double x1, x2, y1, y2;
 	char v;
-	cout << "число должно быть в диопазоне[-1000; 1000]\n";
-	cout << "введите первое комплексное число(re, im):\n";
+	cout << "Число должно быть в диопазоне[-1000; 1000]\n";
+	cout << "Введите первое комплексное число(re, im):\n";
 	bool bCheck{ true };
 	while (bCheck)
 	{
@@ -18,7 +18,7 @@ int main()
 		cin >> y1;
 		bCheck = check(x1, y1);
 	}
-	cout << "введите ворое комплексное число(re, im):\n";
+	cout << "Введите ворое комплексное число(re, im):\n";
 	bCheck = true;
 
 	while (bCheck)
@@ -30,7 +30,7 @@ int main()
 
 	Complex Z = { x1, y1 };
 	Complex X = { x2, y2 };
-	cout << "введите операцию:\n";
+	cout << "Введите операцию:\n";
 	cin >> v;
 
 	switch (v)// Выбор операции
